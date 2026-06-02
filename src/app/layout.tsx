@@ -36,6 +36,7 @@ export default async function RootLayout({
       suppressHydrationWarning
       as="html"
       lang="en"
+      data-theme={style.theme}
       fillWidth
       className={classNames(
         fonts.heading.variable,
@@ -81,9 +82,9 @@ export default async function RootLayout({
                     return themeValue;
                   };
                   
-                  // Apply saved theme
+                  // Apply saved theme, otherwise use configured default (light)
                   const savedTheme = localStorage.getItem('data-theme');
-                  const resolvedTheme = resolveTheme(savedTheme || defaultTheme);
+                  const resolvedTheme = savedTheme ? resolveTheme(savedTheme) : resolveTheme(defaultTheme);
                   root.setAttribute('data-theme', resolvedTheme);
                   
                   // Apply any saved style overrides
