@@ -18,11 +18,8 @@ const baseURL: string = "https://skatematesgame.com";
 
 const routes: RoutesConfig = {
   "/": true,
-  "/about": false,
-  "/work": false,
   "/blog": true,
   "/gallery": true,
-  "/team": true,
 };
 
 const display: DisplayConfig = {
