@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Momas",
   lastName: "",
   name: "Momas",
-  role: "Design Engineer",
+  role: "Co-op skate obstacle course · Steam",
   avatar: "/images/SkateMates.png",
   email: "momasgamedev@gmail.com",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
@@ -14,8 +14,8 @@ const person: Person = {
 
 const newsletter: Newsletter = {
   display: false,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  title: <>Get Skate Mates news in your inbox</>,
+  description: <>Updates on the co-op skate obstacle course game, dev logs, and launch news</>,
 };
 
 const social: Social = [
@@ -59,7 +59,8 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: "Skate Mates",
-  description: `Portfolio website showcasing my work as a ${person.role}`,
+  description:
+    "Skate Mates is a chaotic co-op obstacle course on Steam. You control one skate, your mate controls the other—only teamwork and communication will get you through the course.",
   headline: (
     <Image
       src="/images/SkateMates.png"
@@ -77,8 +78,9 @@ const home: Home = {
   },
   subline: (
     <>
-    You control the left skate, your mate controls the right skate. How hard could it be?
-</>
+      Team up with a mate on a brutal obstacle course. You steer the left skate, they steer the
+      right—crashes, spikes, and rage quits included.
+    </>
   ),
   galleryBlogText: {
     display: true,
@@ -101,18 +103,20 @@ const home: Home = {
 
 const blog: Blog = {
   path: "/blog",
-  label: "Blog",
+  label: "News",
   title: "Skate Mates Latest News",
-  description: `Read what ${person.name} has been up to recently`,
+  description:
+    "Dev updates, trailers, and announcements for Skate Mates—the co-op skate obstacle course coming to Steam.",
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
 
 const gallery: Gallery = {
   path: "/gallery",
-  label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
+  label: "Screenshots",
+  title: "Skate Mates – Screenshots",
+  description:
+    "Screenshots and art from Skate Mates, the co-op skate obstacle course game on Steam.",
   images: [
     { src: "/images/gallery/Desert1.jpg", alt: "Skate Mates desert biome", orientation: "horizontal" },
     { src: "/images/gallery/Grass1.jpg", alt: "Skate Mates grass biome", orientation: "horizontal" },
