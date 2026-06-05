@@ -131,6 +131,7 @@ const gallery: Gallery = {
     { src: "/images/gallery/7.jpg", alt: "Skate Mates screenshot", orientation: "horizontal" },
     { src: "/images/gallery/8.jpg", alt: "Skate Mates screenshot", orientation: "horizontal" },
     { src: "/images/gallery/9.jpg", alt: "Skate Mates screenshot", orientation: "horizontal" },
+    { src: "/images/gallery/10.jpg", alt: "Skate Mates screenshot", orientation: "horizontal" },
   ],
 };
 
