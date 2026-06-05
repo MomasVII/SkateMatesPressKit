@@ -6,6 +6,7 @@ export {
   home,
   blog,
   gallery,
+  pressDisclaimer,
 } from "./content";
 
 export {

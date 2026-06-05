@@ -135,4 +135,7 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, blog, gallery };
+const pressDisclaimer =
+  "Media outlets may use all content on this press kit—including images, videos, logos, and text—for editorial coverage of Skate Mates without prior permission.";
+
+export { person, social, newsletter, home, blog, gallery, pressDisclaimer };
