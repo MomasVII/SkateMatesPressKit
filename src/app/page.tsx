@@ -78,7 +78,7 @@ export default function Home() {
                   </Badge>
                 </SmartLink>
                 <SmartLink
-                  href="/files/PressKit.zip"
+                  href="/PressKit.zip"
                   download
                   unstyled
                   style={{ borderRadius: "2px" }}
