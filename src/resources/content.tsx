@@ -76,6 +76,11 @@ const home: Home = {
     title: "Wishlist on Steam today!",
     href: "https://store.steampowered.com/app/4549600/Skate_Mates/",
   },
+  demo: {
+    display: true,
+    title: "Play the Demo",
+    href: "https://store.steampowered.com/app/4812680/Skate_Mates_Demo/",
+  },
   subline: (
     <>
       Team up with a mate on a brutal obstacle course. You steer the left skate, they steer the

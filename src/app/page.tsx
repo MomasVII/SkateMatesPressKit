@@ -77,6 +77,31 @@ export default function Home() {
                     <Row paddingY="2">{home.featured.title}</Row>
                   </Badge>
                 </SmartLink>
+                {home.demo.display && (
+                  <SmartLink
+                    href={home.demo.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    unstyled
+                    style={{ borderRadius: "2px" }}
+                  >
+                    <Badge
+                      paddingX="12"
+                      paddingY="4"
+                      textVariant="label-default-s"
+                      arrow={false}
+                      effect={false}
+                      style={{
+                        background: "linear-gradient(to bottom, #5ba3d9 5%, #2e6d9e 95%)",
+                        color: "#ffffff",
+                        borderColor: "#2e6d9e",
+                        borderRadius: "2px",
+                      }}
+                    >
+                      <Row paddingY="2">{home.demo.title}</Row>
+                    </Badge>
+                  </SmartLink>
+                )}
                 <SmartLink
                   href="/PressKit.zip"
                   download

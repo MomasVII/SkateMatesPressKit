@@ -99,6 +99,12 @@ export interface Home extends BasePageConfig {
     title: React.ReactNode;
     href: string;
   };
+  /** Demo badge shown alongside featured and press kit buttons */
+  demo: {
+    display: boolean;
+    title: React.ReactNode;
+    href: string;
+  };
   /** The sub text which appears below the headline */
   subline: React.ReactNode;
   /** Text block between the home gallery slider and the blog section */
