@@ -105,6 +105,12 @@ export interface Home extends BasePageConfig {
     title: React.ReactNode;
     href: string;
   };
+  /** Press kit download (hosted outside Vercel; zip exceeds 1GB deploy limit) */
+  pressKit: {
+    display: boolean;
+    title: React.ReactNode;
+    href: string;
+  };
   /** The sub text which appears below the headline */
   subline: React.ReactNode;
   /** Text block between the home gallery slider and the blog section */

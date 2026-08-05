@@ -102,28 +102,31 @@ export default function Home() {
                     </Badge>
                   </SmartLink>
                 )}
-                <SmartLink
-                  href="/PressKit.zip"
-                  download
-                  unstyled
-                  style={{ borderRadius: "2px" }}
-                >
-                  <Badge
-                    paddingX="12"
-                    paddingY="4"
-                    textVariant="label-default-s"
-                    arrow={false}
-                    effect={false}
-                    style={{
-                      background: "linear-gradient(to bottom, #f29918 5%, #d97a0a 95%)",
-                      color: "#ffffff",
-                      borderColor: "#d97a0a",
-                      borderRadius: "2px",
-                    }}
+                {home.pressKit.display && (
+                  <SmartLink
+                    href={home.pressKit.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    unstyled
+                    style={{ borderRadius: "2px" }}
                   >
-                    <Row paddingY="2">Download Press Kit</Row>
-                  </Badge>
-                </SmartLink>
+                    <Badge
+                      paddingX="12"
+                      paddingY="4"
+                      textVariant="label-default-s"
+                      arrow={false}
+                      effect={false}
+                      style={{
+                        background: "linear-gradient(to bottom, #f29918 5%, #d97a0a 95%)",
+                        color: "#ffffff",
+                        borderColor: "#d97a0a",
+                        borderRadius: "2px",
+                      }}
+                    >
+                      <Row paddingY="2">{home.pressKit.title}</Row>
+                    </Badge>
+                  </SmartLink>
+                )}
               </Row>
             </RevealFx>
           )}

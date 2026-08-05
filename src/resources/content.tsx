@@ -81,6 +81,11 @@ const home: Home = {
     title: "Play the Demo",
     href: "https://store.steampowered.com/app/4812680/Skate_Mates_Demo/",
   },
+  pressKit: {
+    display: true,
+    title: "Download Press Kit",
+    href: "https://github.com/MomasVII/SkateMatesPressKit/releases/download/press-kit/PressKit.zip",
+  },
   subline: (
     <>
       Team up with a mate on a brutal obstacle course. You steer the left skate, they steer the
