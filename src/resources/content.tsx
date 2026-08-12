@@ -84,7 +84,8 @@ const home: Home = {
   pressKit: {
     display: true,
     title: "Download Press Kit",
-    href: "https://github.com/MomasVII/SkateMatesPressKit/releases/download/press-kit/PressKit.zip",
+    // Canonical public URL; next.config redirects this to the GitHub Release asset.
+    href: "/PressKit.zip",
   },
   subline: (
     <>

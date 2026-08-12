@@ -105,8 +105,7 @@ export default function Home() {
                 {home.pressKit.display && (
                   <SmartLink
                     href={home.pressKit.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    download
                     unstyled
                     style={{ borderRadius: "2px" }}
                   >
