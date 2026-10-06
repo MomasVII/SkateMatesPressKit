@@ -127,22 +127,22 @@ const gallery: Gallery = {
   label: "Screenshots",
   title: "Skate Mates – Screenshots",
   description:
-    "Screenshots and art from Skate Mates, the co-op skate obstacle course game on Steam.",
+    "Screenshots and GIFs from Skate Mates, the co-op skate obstacle course game on Steam.",
   images: [
-    { src: "/images/gallery/Desert1.jpg", alt: "Skate Mates desert biome", orientation: "horizontal" },
-    { src: "/images/gallery/Grass1.jpg", alt: "Skate Mates grass biome", orientation: "horizontal" },
-    { src: "/images/gallery/Lava1.jpg", alt: "Skate Mates lava biome", orientation: "horizontal" },
-    { src: "/images/gallery/DesertDeath.jpg", alt: "Skate Mates desert gameplay", orientation: "horizontal" },
-    { src: "/images/gallery/Grass2.jpg", alt: "Skate Mates grass level", orientation: "horizontal" },
     { src: "/images/gallery/1.jpg", alt: "Skate Mates screenshot", orientation: "horizontal" },
+    { src: "/images/gallery/2.jpg", alt: "Skate Mates screenshot", orientation: "horizontal" },
     { src: "/images/gallery/3.jpg", alt: "Skate Mates screenshot", orientation: "horizontal" },
     { src: "/images/gallery/4.jpg", alt: "Skate Mates screenshot", orientation: "horizontal" },
     { src: "/images/gallery/5.jpg", alt: "Skate Mates screenshot", orientation: "horizontal" },
-    { src: "/images/gallery/6.jpg", alt: "Skate Mates screenshot", orientation: "horizontal" },
-    { src: "/images/gallery/7.jpg", alt: "Skate Mates screenshot", orientation: "horizontal" },
-    { src: "/images/gallery/8.jpg", alt: "Skate Mates screenshot", orientation: "horizontal" },
     { src: "/images/gallery/9.jpg", alt: "Skate Mates screenshot", orientation: "horizontal" },
     { src: "/images/gallery/10.jpg", alt: "Skate Mates screenshot", orientation: "horizontal" },
+  ],
+  gifs: [
+    { src: "/images/gifs/1.gif", alt: "Skate Mates gameplay GIF" },
+    { src: "/images/gifs/2.gif", alt: "Skate Mates gameplay GIF" },
+    { src: "/images/gifs/3.gif", alt: "Skate Mates gameplay GIF" },
+    { src: "/images/gifs/5.gif", alt: "Skate Mates gameplay GIF" },
+    { src: "/images/gifs/6.gif", alt: "Skate Mates gameplay GIF" },
   ],
 };
 

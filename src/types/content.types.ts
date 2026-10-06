@@ -249,4 +249,11 @@ export interface Gallery extends BasePageConfig {
     /** Image orientation (horizontal/vertical) */
     orientation: string;
   }>;
+  /** Animated GIFs available as direct public URLs (e.g. for emails) */
+  gifs: Array<{
+    /** GIF source path under /public */
+    src: string;
+    /** GIF alt text */
+    alt: string;
+  }>;
 }
