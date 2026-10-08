@@ -7,13 +7,15 @@ const withMDX = mdx({
 
 const pressKitDownloadUrl =
   "https://github.com/MomasVII/SkateMatesPressKit/releases/download/press-kit/PressKit.zip";
+const shortsDownloadUrl =
+  "https://github.com/MomasVII/SkateMatesPressKit/releases/download/shorts/Shorts.zip";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   transpilePackages: ["next-mdx-remote"],
-  // PressKit.zip exceeds Vercel's 1GB limit; served from GitHub Releases.
-  // Keep /PressKit.zip as the public URL via permanent redirect.
+  // Large zips are served from GitHub Releases (PressKit.zip exceeds Vercel's 1GB limit).
+  // Keep the site paths as the public URLs via permanent redirects.
   async redirects() {
     return [
       {
@@ -21,11 +23,21 @@ const nextConfig = {
         destination: pressKitDownloadUrl,
         permanent: true,
       },
+      {
+        source: "/Shorts.zip",
+        destination: shortsDownloadUrl,
+        permanent: true,
+      },
+      {
+        source: "/shorts.zip",
+        destination: shortsDownloadUrl,
+        permanent: true,
+      },
     ];
   },
   outputFileTracingExcludes: {
-    "/*": ["./public/PressKit.zip"],
-    "/api/*": ["./public/PressKit.zip"],
+    "/*": ["./public/PressKit.zip", "./public/Shorts.zip"],
+    "/api/*": ["./public/PressKit.zip", "./public/Shorts.zip"],
   },
   images: {
     remotePatterns: [
