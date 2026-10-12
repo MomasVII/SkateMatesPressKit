@@ -9,6 +9,8 @@ const pressKitDownloadUrl =
   "https://github.com/MomasVII/SkateMatesPressKit/releases/download/press-kit/PressKit.zip";
 const shortsDownloadUrl =
   "https://github.com/MomasVII/SkateMatesPressKit/releases/download/shorts/Shorts.zip";
+const trailerDownloadUrl =
+  "https://github.com/MomasVII/SkateMatesPressKit/releases/download/trailer/Trailer.mp4";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -31,6 +33,16 @@ const nextConfig = {
       {
         source: "/shorts.zip",
         destination: shortsDownloadUrl,
+        permanent: true,
+      },
+      {
+        source: "/Trailer.mp4",
+        destination: trailerDownloadUrl,
+        permanent: true,
+      },
+      {
+        source: "/trailer.mp4",
+        destination: trailerDownloadUrl,
         permanent: true,
       },
     ];
